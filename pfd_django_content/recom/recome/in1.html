@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>REVIEW {{p_id}}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+{% load staticfiles %}
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo_misc.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo_style.css' %}">
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+
+<div class="site-main" id="sTop">
+    <div class="site-header">
+        <div class="main-header">
+            <div class="container">
+                <div id="menu-wrapper">
+                    <div class="row">
+                        <a href="#"><div class="logo-wrapper col-md-4 col-sm-2 col-xs-8">
+                            </div>
+                        </a>
+                        <div class="col-md-8 col-sm-10 col-xs-4 main-menu text-right">
+                            <ul class="menu-first hidden-sm hidden-xs">    
+                        <li class="active">WELCOME {{ full_name }} ( {{ u_id }} ) </li>
+                        <li><a href="\logouti\">Logout</a></li>
+                        </ul>
+                            <a href="#" class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></a>
+                        </div> <!-- /.main-menu -->
+                    </div> <!-- /.row -->
+                </div> <!-- /#menu-wrapper -->
+                <div class="menu-responsive hidden-md hidden-lg">
+                    <ul>
+                        <li class="active">WELCOME {{ full_name }} ( {{ u_id }} ) </li>
+                        <li><a href="\logouti\">Logout</a></li>
+                        </ul>
+                </div> <!-- /.menu-responsive -->
+            </div> <!-- /.container -->
+        </div> <!-- /.main-header -->
+    </div> <!-- /.site-header -->
+
+<div class="content-section" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="heading-section col-md-12 text-center">
+                <h2>REVIEW</h2>
+                <p>Your opinion is important too</p>
+            </div> <!-- /.heading-section -->
+        </div> <!-- /.row -->
+        <div class="row">
+		<div class="col-md-12" id="revi">
+				<h1>PRODUCT ID  : {{p_id}}</h1>
+				<h1>USER ID     : {{r_id}}</h1>
+                <h1>USER NAME   : {{rname}}</h1>
+                <h1>HELPFULNESS : {{helpf}}<a href="">LIKE</a></h1>
+                <h1>SCORE       : {{score}}</h1>
+			<h1>SUMMARY         : {{ sumi1 }}</h1>
+			<h1>REVIEW :<br> {{text1}}</h1>
+			</div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /#services -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-xs-12 text-left">
+                Created by VARSHA(11MSE1172) & VINEETH(11MSE1184)
+            </div> <!-- /.text-center -->
+            <div class="col-md-4 hidden-xs text-right">
+                <a href="#top" id="go-top">Back to top</a>
+            </div> <!-- /.text-center -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /#footer -->
+
+
+<script src="js/vendor/jquery-1.11.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/bootstrap.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	setTimeout(function(){
+		$('body').addClass('loaded');
+		$('.pre-image').css('display','none');
+		$('#header-wrap').css('display','none');
+	}, 3000);
+	
+});
+</script>
+
+</body>
+</html>
